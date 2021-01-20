@@ -1,7 +1,7 @@
 package com.lambdaschool.orders.controllers;
 
-import com.lambdaschool.orders.models.Agent;
-import com.lambdaschool.orders.services.AgentsService;
+import com.lambdaschool.orders.models.Order;
+import com.lambdaschool.orders.services.OrdersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/agents")
-public class AgentsController {
+@RequestMapping("/orders")
+public class OrdersController {
     @Autowired
-    private AgentsService agentsService;
+    private OrdersService ordersService;
 
-    @GetMapping(value = "/agent/{agentId}", produces = "application/json")
-    public ResponseEntity<?> getAgentById (@PathVariable Long agentId) {
-        Agent a = agentsService.findAgentById(agentId);
+    @GetMapping(value = "/order/{orderId}", produces = "application/json")
+    public ResponseEntity<?> getOrderByIdWithoutPayment (@PathVariable Long orderId) {
+        Order o = ordersService.findOrderById(orderId);
 
-        return new ResponseEntity<>(a, HttpStatus.OK);
+        return new ResponseEntity<>(o, HttpStatus.OK);
     }
 }

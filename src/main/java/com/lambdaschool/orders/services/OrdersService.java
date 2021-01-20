@@ -4,4 +4,5 @@ import com.lambdaschool.orders.models.Order;
 
 public interface OrdersService {
     Order save(Order order);
+    Order findOrderById(long id);
 }
