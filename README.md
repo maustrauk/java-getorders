@@ -1298,15 +1298,15 @@ Using the provided seed data, a successful application will return the following
 
 ## Instructions
 
-* [ ] Please fork and clone this repository. Copy your solution from part 1 into this repository. Your solution from part 1 is the starting point for part 2. If your part 1 did not reach MVP, please check with your TL group leader about your options. Regularly commit and push your code as appropriate.
+* [*] Please fork and clone this repository. Copy your solution from part 1 into this repository. Your solution from part 1 is the starting point for part 2. If your part 1 did not reach MVP, please check with your TL group leader about your options. Regularly commit and push your code as appropriate.
 
-* [ ] Expose the following endpoints
+* [*] Expose the following endpoints
 
-* [ ]  GET /customers/orders - Returns all customers with their orders
-* [ ]  GET /customers/customer/{id} - Returns the customer and their orders with the given customer id
-* [ ]  GET /customers/namelike/{likename} - Returns all customers and their orders with a customer name containing the given substring
-* [ ]  GET /agents/agent/{id} - Returns the agent and their customers with the given agent id
-* [ ]  GET /orders/order/{id} - Returns the order and its customer with the given order number
+* [*]  GET /customers/orders - Returns all customers with their orders
+* [*]  GET /customers/customer/{id} - Returns the customer and their orders with the given customer id
+* [*]  GET /customers/namelike/{likename} - Returns all customers and their orders with a customer name containing the given substring
+* [*]  GET /agents/agent/{id} - Returns the agent and their customers with the given agent id
+* [*]  GET /orders/order/{id} - Returns the order and its customer with the given order number
 * [ ]  GET /customers/orders/count - Using a custom query, return a list of all customers with the number of orders they have placed.
 
 ### Stretch Goal
