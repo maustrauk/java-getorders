@@ -25,10 +25,15 @@ public class CustomersController {
     }
 
     @GetMapping (value = "/customers/{customerId}", produces = "application/json")
-
     public ResponseEntity<?> getCustomerById (@PathVariable Long customerId) {
         Customer c = customersService.findCustomerById(customerId);
 
         return new ResponseEntity<>(c, HttpStatus.OK);
+    }
+
+    @GetMapping (value = "/namelike/{restname}", produces = "application/json")
+    public  ResponseEntity<?> findCustomerByNameLike (@PathVariable String restname) {
+        List<Customer> rtnList = customersService.findCustomerByNameLike(restname);
+        return new ResponseEntity<>(rtnList, HttpStatus.OK);
     }
 }
