@@ -1307,8 +1307,8 @@ Using the provided seed data, a successful application will return the following
 * [*]  GET /customers/namelike/{likename} - Returns all customers and their orders with a customer name containing the given substring
 * [*]  GET /agents/agent/{id} - Returns the agent and their customers with the given agent id
 * [*]  GET /orders/order/{id} - Returns the order and its customer with the given order number
-* [ ]  GET /customers/orders/count - Using a custom query, return a list of all customers with the number of orders they have placed.
+* [*]  GET /customers/orders/count - Using a custom query, return a list of all customers with the number of orders they have placed.
 
 ### Stretch Goal
 
-* [ ] GET /orders/advanceamount - returns all orders with their customers that have an advanceamount greater than 0.
+* [*] GET /orders/advanceamount - returns all orders with their customers that have an advanceamount greater than 0.

@@ -10,5 +10,5 @@ public interface CustomersService {
     List<Customer> findAllCustomers();
     Customer findCustomerById(long id);
     List<Customer> findCustomerByNameLike(String namelike);
-    public List<CustomerCountOrders> getCustomerCountOrders();
+    List<CustomerCountOrders> getCustomerCountOrders();
 }

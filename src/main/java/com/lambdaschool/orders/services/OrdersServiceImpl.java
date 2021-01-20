@@ -3,6 +3,7 @@ package com.lambdaschool.orders.services;
 import com.lambdaschool.orders.models.Order;
 import com.lambdaschool.orders.repositories.OrdersRepository;
 import com.lambdaschool.orders.views.CustomerCountOrders;
+import com.lambdaschool.orders.views.OrdersWithCustomersAdvam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,5 +29,9 @@ public class OrdersServiceImpl implements OrdersService{
                 .orElseThrow(() ->new EntityNotFoundException("Order " + id + " Not Found"));
     }
 
+    @Override
+    public List<OrdersWithCustomersAdvam> getOrdersWithCustomersAdvam() {
+        return ordersrepo.getOrdersWithCustomersAdvam();
+    }
 
 }
